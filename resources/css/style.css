@@ -1,0 +1,425 @@
+html{
+  font-size: 16px;
+  background-color: #fff;
+  font-family: Open sans, Helvetica, Sans-serif;
+  color: #333333;
+  letter-spacing: 0.0825rem;
+}
+
+.image-container img,
+.image-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.relative-offset {
+  position: relative;
+  top: 4rem;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 97.5%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 2rem;
+  width: auto;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+.academy {
+  color: #c0c0c0;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+header nav {
+  display: flex;
+  align-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+nav .divider {
+  width: 1rem;
+  height: 100%;
+  background-color: #00ffff;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 1824px) {
+  .main-container {
+    width: 114rem;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 570px) {
+  .desktop {
+    display: none;
+    border: 1px solid red;
+  }
+
+  .mobile {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+  }
+
+}
+
+/* Banner Section */
+
+.image-container{
+  overflow: hidden;
+}
+
+.banner{
+  background-color: #b3ecff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-side {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.main-text {
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-side .main-text {
+  text-align: left;
+  color: #0000ff
+}
+
+.banner h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.start-button {
+  background-color: #0000ff;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 570px) {
+  .banner {
+    flex-direction: column;
+    width: 100%;
+    border:
+  }
+
+  .start-button {
+    background-color: #555555;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .main, .banner-side {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-side {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .banner-side .main-text {
+    text-align: left;
+  }
+
+  .banner-side h1, .banner-side h3 {
+    margin-left: 1rem;
+  }
+
+}
+
+/* Info Section */
+
+.main-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-info .image-container {
+  width: 100%;
+}
+
+.main-info img {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-container {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.info-side {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.info-side h3 {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.info-side h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-side a {
+color: #1e90ff;
+}
+
+.info-item .image-container {
+  width: 35%;
+  margin: 1rem;
+}
+
+#first-item {
+  margin-top: 0;
+}
+
+#gray-tile {
+  background-color: #c0c0c0;
+}
+
+.info-under h1 {
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+.info-under p {
+  font-size: 1.5rem;
+  margin-top: 24px;
+  line-height: 1.2;
+}
+
+#author {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: Helvetica;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 570px) {
+ .info .main {
+    display: none;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .info-item {
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid red;
+  }
+
+  .info-item .image-container, .info-item .info-side {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .info-side {
+    padding-left: 1rem;
+  }
+
+  #gray-tile {
+    background-color: #fff;
+  }
+
+}
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 4.5rem;
+  background-color: #c0c0c0;
+}
+
+.course-container {
+  width: 30%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.course-details {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  height: 8rem;
+}
+
+.course-details h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-details h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.course-details h5 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+@media only screen and (max-width: 570px) {
+
+  .courses{
+    background-color: #fff;
+    padding: 1rem;
+  }
+
+  .course-details {
+    background-color: #c0c0c0;
+    padding: 1rem 0 1.5rem 1rem;
+    height: auto;
+  }
+
+  .course-details h4, .course-details h5 {
+    display: none;
+  }
+
+  .course-container {
+    width: 100%;
+  }
+
+  .course-details h2 {
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+  }
+}
+
+/* Exhibit Section */
+
+.exhibit {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exhibit .info-under h4 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 570px) {
+  .exhibit .desktop {
+    display: none;
+  }
+
+
+  .exhibit .main-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+/* Footer Section */
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: normal;
+  height: 4rem;
+  border-top: 1px solid #c0c0c0;
+}
+
+footer a {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 570px) {
+  footer {
+    margin-top: 1.5rem;
+    padding: 1rem 0 1rem 1rem;
+    height: auto;
+  }
+
+  footer .left {
+    margin-top: 1rem;
+  }
+}
